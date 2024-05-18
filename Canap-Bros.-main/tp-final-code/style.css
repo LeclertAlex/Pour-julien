@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.topnav {
+  display: flex;
+  background-color: #333;
+  overflow: hidden;
+  padding: 10px;
+  font-family: Montserrat sans-serif;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: montserrat sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Styles pour le menu hamburger */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  /* Styles pour le menu responsive */
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+  margin-bottom: 10vh;
+}
+
+
+
+.bold {
+  font-weight: bold;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.text-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 200px;
+}
+
+.contact-section {
+  margin: 25px 25%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submit-btn {
+  background-color: dodgerblue;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.carousel-container {
+  max-width: 325px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: #313030;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+
+.banner-image {
+  width: 100%;
+  /* Assurez-vous que l'image occupe toute la largeur du header */
+  height: 220px;
+  /* Permet à l'image de conserver son ratio */
+  display: block;
+  /* Pour s'assurer qu'elle occupe tout l'espace horizontal */
+}
+
+/* Styles pour le header */
+header {
+  width: 100%;
+  height: 700px;
+  background-image: url(images/banner_retro_gaming.png);
+  /* Position relative pour que les éléments internes soient positionnés par rapport à ce conteneur */
+}
+
+/* Styles pour le texte du header */
+.header-text {
+  align-content: center;
+  color: #fefefe;
+}
+
+.header-text h1 {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-text p {
+  font-size: 2em;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*  style CSS collection Retrogaming */
+.nav-barre{
+  
+}
+
+
+.texte-titre{
+  text-align: center;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+  
+.haut-body-C{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  padding: 10px;
+}
+
+.L-Nitendo-C{
+  display: flex;
+  justify-content: center;
+}
+
+.logo-N{
+  width: 200px;
+  height: 50px;
+}
