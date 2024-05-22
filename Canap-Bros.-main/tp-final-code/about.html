@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulaire</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-text">
+      <h1 class="bold fs-82 text-center">Canapé.Bros</h1>
+      <p class="bold fs-24 text-center">Revivez la magie du rétro gaming!</p>
+
+  </header>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Accueil</a>
+    <a href="collection.html">Collection</a>
+    <a href="event.html">Event</a>
+    <a href="about.html" class="active">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <form action="/action_page.php" method="post">
+    <label for="fname">Prénom :</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Votre prénom" required><br>
+    <label for="lname">Nom :</label><br>
+    <input type="text" id="lname" name="lname" placeholder="Votre nom" required><br><br>
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" id="email" name="email" placeholder="Votre email" required><br><br>
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="10" cols="30" placeholder="Votre message"></textarea><br><br>
+    <input type="submit" value="Envoyer">
+  </form>
+
+  <footer>
+    <p>&copy; 2024 Canepé.Bros - Retro Gaming. Tous droits réservés.</p>
+  </footer>
+  <script src="nav-bar.js"></script>
+
+</body>
+
+</html>
